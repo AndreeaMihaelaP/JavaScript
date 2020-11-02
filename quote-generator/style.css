@@ -82,7 +82,7 @@ button:active {
 	font-size: 1.5rem;
 }
 
-/* Media Query: Tab;et or smaller */
+/* Media Query: Tablet or smaller */
 @media screen and (max-width: 1000px) {
 	.quote-container {
 		margin: auto 10px;
