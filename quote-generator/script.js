@@ -25,10 +25,12 @@ function complete() {
 function newQuote() {
 	// Pick a random quote from apiQuotes array
 	const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+	
+	// Check if Author field is blank and replace it with 'Unknown'
 	if(quote.author === '') {
-		authorText.innerText = 'Unknown';
+		authorText.textContent = 'Unknown';
 	} else {
-		authorText.innerText = quote.author;
+		authorText.textContent = quote.author;
 	}
 
 	// Reduce font size for long quotes
@@ -38,7 +40,7 @@ function newQuote() {
 		quoteText.classList.remove('long-quote');
 	}
 	
-	quoteText.innerText = quote.text;
+	quoteText.textContent = quote.text;
 	
 	// Stop loader and show the quote
 	complete();
@@ -60,8 +62,8 @@ async function getQuotes() {
 
 // Tweet Quote
 function tweetQuote() {
-	const quote = quoteText.innerText;
-	const author = authorText.innerText;
+	const quote = quoteText.textContent;
+	const author = authorText.textContent;
 	const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
 	window.open(twitterUrl, '_blank');
 }
