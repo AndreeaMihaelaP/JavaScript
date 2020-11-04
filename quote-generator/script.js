@@ -7,14 +7,12 @@ const loader = document.getElementById('loader');
 
 let apiQuotes = [];
 
-// Show loading
-function loading() {
+function showLoading() {
 	loader.hidden = false;
 	quoteContainer.hidden = true;
 }
 
-// Hide Loading
-function complete() {
+function hideLoading() {
 	if(!loader.hidden) {
 		quoteContainer.hidden = false;
 		loader.hidden = true;
@@ -43,12 +41,12 @@ function newQuote() {
 	quoteText.textContent = quote.text;
 	
 	// Stop loader and show the quote
-	complete();
+	hideLoading();
 }
 
 // Get Quotes From Api
 async function getQuotes() {
-	loading();
+	showLoading();
 	const apiUrl = 'https://type.fit/api/quotes';
 	try {
 		const response = await fetch(apiUrl);
