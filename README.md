@@ -7,4 +7,5 @@ Joke Teller - https://andreeamihaelap.github.io/js-projects/joke-teller \
 Light Dark Mode - https://andreeamihaelap.github.io/js-projects/light-dark-mode \
 Animated Template - https://andreeamihaelap.github.io/js-projects/animated-template \
 Navigation Nation - https://andreeamihaelap.github.io/js-projects/navigation-nation \
-Music Player - https://andreeamihaelap.github.io/js-projects/music-player
+Music Player - https://andreeamihaelap.github.io/js-projects/music-player \
+Custom Countdown - https://andreeamihaelap.github.io/js-projects/custom-countdown
